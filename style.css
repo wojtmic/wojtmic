@@ -44,3 +44,17 @@ header {
 .project a:hover {
     text-decoration: underline;
 }
+/* style.css */
+.github-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.github-button:hover {
+    background-color: #555;
+}
+
