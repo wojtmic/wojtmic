@@ -3,68 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="awatar.png">\
-    <link rel="shortcut icon" type="image/x-icon" href="awatar.png">
+    <link rel="icon" type="image/x-icon" href="awatar.png">
     <title>Wojtmic.dev</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="awatar.png">
-    <script type="text/javascript" src="script.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Hi, I am Wojtmic</h1>
-        <p>and I am a programmer!</p>
-    </header>
     <div class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Bob assistant</h3>
-            <p>The best AI assistant for more info visit:</p>
-            <a href="https://bob.wojtmic.dev">Bob's website</a>
+        <!-- Profile section on the left with README content -->
+        <div class="profile-section">
+            <img src="awatar.png" alt="Wojtmic's profile picture">
+            <h1>Hi, I am Wojtmic</h1>
+            <div class="profile-info">
+                <p><i class="fas fa-laptop-code"></i> Python, basic JS and C#</p>
+                <p><i class="fab fa-linux"></i> Proud Arch Linux User<strong>  btw</strong></p>
+                <p><i class="fas fa-tools"></i> Made absolutely nothing of note!</p>
+            </div>
+            <a href="https://github.com/wojtmic" class="button"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/wojtmic" class="button"><i class="fab fa-x"></i></a>
+            <a href="https://www.reddit.com/user/Slight_Bed5910/" class="button"><i class="fab fa-reddit"></i></a>
+            <a href="https://www.youtube.com/@wojtmic" class="button"><i class="fab fa-youtube"></i></a>
+
         </div>
-        <div class="project">
-            <h3>This website</h3>
-            <p>Yeah, seriously! This website is my first real project. When I bought the domain, this was my first idea. (if it wasn't obvious)</p>
-            <a href="https://wojtmic.dev">View Project</a>
-        </div>
-        <div class="project">
-            <h3>BlockerThingy</h3>
-            <p>Chrome extension that blocks some sites.</p>
-            <a href="https://github.com/wojtmic/BlockerThingy">View Project</a>
-        </div>
-        <div class="project">
-            <h3>MagmaShell</h3>
-            <p>MagmaShell.</p>
-            <a href="https://github.com/wojtmic/MagmaShell">View Project</a>
-        </div>
-        <div class="project">
-            <h3>2D-ASCII-Graphic-Renderer</h3>
-            <p>Just a simple 2D ASCII graphic kind of script made in clean Python.</p>
-            <a href="https://github.com/wojtmic/2D-ASCII-Graphic-Renderer">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Debug Project</h3>
-            <p>😳🔒🎫🎫🎫🎫</p>
-            <a href="💀">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Vulcane</h3>
-            <p>Vulcane is a simple game engine written in python!</p>
-            <a href="https://github.com/wojtmic/Vulcane">View Project</a>
-        </div>
-        <div class="project">
-            <h3>CCMD</h3>
-            <p>Customizable Windows CMD.</p>
-            <a href="https://github.com/wojtmic/ccmd">View Project</a>
-        </div>
-        <!-- Add more project sections as needed -->
         
-        <h2>About Me</h2>
-        <p>I am a Python programmer and I know something about JavaScript.</p>
-        
-        <!-- Add a button to redirect to your GitHub profile -->
-        <a href="https://github.com/wojtmic" class="github-button">Visit My GitHub</a>
+        <!-- Projects grid on the right with pagination -->
+        <div class="projects-container">
+            <div class="projects-section" id="projects-page-1">
+                <!-- First page of projects will be shown by default -->
+                 <div class="project">
+                    <h3>Wojtmic.dev</h3>
+                    <p>This is what you are seeing right now!</p>
+                    <a href="https://wojtmic.dev">View Project</a>
+                </div>
+                 <div class="project">
+                    <h3>Compot bot</h3>
+                    <p>General-purpose Discord utility bot thats free</p>
+                    <a href="https://compot.wojtmic.dev">View Project</a>
+                </div>
+                <div class="project archived">
+                    <h3>Bob assistant</h3>
+                    <p>Windows AI-powered assistant</p>
+                    <a href="https://bob.wojtmic.dev">Bob's website</a>
+                </div>
+                
+                <div class="project">
+                    <h3>Axon</h3>
+                    <p>Hyper-configurable Linux app launcher</p>
+                    <a href="https://github.com/axon">View Project</a>
+                </div>
+                
+                <div class="project archived">
+                    <h3>BlockerThingy</h3>
+                    <p>Blockes some sites, mostly useless right now</p>
+                    <a href="https://github.com/wojtmic/BlockerThingy">View Project</a>
+                </div>
+                <div class="project archived">
+                    <h3>WGS</h3>
+                    <p>Widget utility for ricing</p>
+                    <a href="https://github.com/wojtmic/wgs">View Project</a>
+                </div>
+            </div>
+            <div class="projects-section hidden" id="projects-page-2">
+                <!-- Second page of projects -->
+               <div class="project empty">
+                    <h3>Coming Soon</h3>
+                    <p>New project under development</p>
+                </div>
+                
+                <div class="project empty">
+                    <h3>Coming Soon</h3>
+                    <p>New project under development</p>
+                </div>
+                
+                <!-- Empty slots for future projects -->
+                <div class="project empty">
+                    <h3>Coming Soon</h3>
+                    <p>New project under development</p>
+                </div>
+                
+                <div class="project empty">
+                    <h3>Coming Soon</h3>
+                    <p>New project under development</p>
+                </div>
+                
+                <div class="project empty">
+                    <h3>Coming Soon</h3>
+                    <p>New project under development</p>
+                </div>
+                
+                <div class="project empty">
+                    <h3>Coming Soon</h3>
+                    <p>New project under development</p>
+                </div>
+
+            </div>
+
+            
+
+            <!-- Pagination Navigation -->
+            <div class="pagination">
+                <button id="prev-page" class="page-nav" disabled><i class="fas fa-chevron-left"></i></button>
+                <span id="page-indicator">Page 1</span>
+                <button id="next-page" class="page-nav"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
