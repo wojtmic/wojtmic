@@ -219,3 +219,7 @@ body {
         position: static;
     }
 }
+
+.ba {
+    display: none;
+}

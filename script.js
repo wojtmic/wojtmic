@@ -42,4 +42,5 @@ document.addEventListener('DOMContentLoaded', function () {
         // Disable/enable next button
         nextPageBtn.disabled = (currentPage === totalPages);
     }
+    
 });
